@@ -10,11 +10,23 @@ using System.Windows.Forms;
 
 namespace PharmacyProject
 {
-    public partial class Form1 : Form
+    public partial class FormMenu : Form
     {
-        public Form1()
+        public FormMenu()
         {
             InitializeComponent();
+        }
+
+        private void buttonPokup_Click(object sender, EventArgs e)
+        {
+            Form formp = new FormPokup();
+            formp.Show();
+        }
+
+        private void buttonMed_Click(object sender, EventArgs e)
+        {
+            Form formmed = new FormMedecine();
+            formmed.Show();
         }
     }
 }

@@ -8,6 +8,7 @@ namespace PharmacyProject
 {
     static class Program
     {
+        public static PharmacyProjectEntities1 PDb = new PharmacyProjectEntities1();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -16,7 +17,7 @@ namespace PharmacyProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FormAutorization());
         }
     }
 }
